@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
 
   s.platforms    = { :ios => "11.0" }
-  s.source       = { :git => "https://github.com/riderodd/react-native-vosk.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/parkdigy/react-native-vosk.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm,swift}", "ios/vosk-model-spk-0.4/*"
   s.frameworks = "Accelerate"
@@ -41,5 +41,5 @@ Pod::Spec.new do |s|
     s.dependency "RCTTypeSafety"
     s.dependency "ReactCommon/turbomodule/core"
    end
-  end    
+  end
 end

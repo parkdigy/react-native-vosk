@@ -14,7 +14,7 @@ npm install -S react-native-vosk
 
 Vosk uses prebuilt models to perform speech recognition offline. You have to download the model(s) that you need on [Vosk official website](https://alphacephei.com/vosk/models)
 Avoid using too heavy models, because the computation time required to load them into your app could lead to bad user experience.
-Then, unzip the model in your app folder. If you just need to use the iOS version, put the model folder wherever you want, and import it as described below. If you need both iOS and Android to work, you can avoid to copy the model twice for both projects by importing the model from the Android assets folder in XCode. 
+Then, unzip the model in your app folder. If you just need to use the iOS version, put the model folder wherever you want, and import it as described below. If you need both iOS and Android to work, you can avoid to copy the model twice for both projects by importing the model from the Android assets folder in XCode.
 
 **Experimental**: Loading a model dynamically into the app storage, aside from the main bundle is a new and experimental feature. Would love for you all to test, and let us know if it is a viable option. If you choose to download a model to your app’s storage (preferably internal), you can pass the model directory path when calling `vosk.loadModel(path)`.
 
@@ -24,11 +24,11 @@ To download and load a model as part of an app's Main Bundle, just do as follows
 
 In Android Studio, open the project manager, right-click on your project folder and go to `New` > `Folder` > `Assets folder`.
 
-![Android Studio assets folder creation](https://raw.githubusercontent.com/riderodd/react-native-vosk/main/docs/android_studio_assets_folder_creation.png)
+![Android Studio assets folder creation](https://raw.githubusercontent.com/parkdigy/react-native-vosk/main/docs/android_studio_assets_folder_creation.png)
 
 Then put the model folder inside the assets folder created. In your file tree it should be located in `android\app\src\main\assets`. So, if you downloaded the french model named `model-fr-fr`, you should access the model by going to `android\app\src\main\assets\model-fr-fr`. In Android studio, your project structure should be like that:
 
-![Android Studio final project structure](https://raw.githubusercontent.com/riderodd/react-native-vosk/main/docs/android_studio_project_structure.png)
+![Android Studio final project structure](https://raw.githubusercontent.com/parkdigy/react-native-vosk/main/docs/android_studio_project_structure.png)
 
 You can import as many models as you want.
 
@@ -36,15 +36,15 @@ You can import as many models as you want.
 
 In XCode, right-click on your project folder, and click on `"Add files to [your project name]"`.
 
-![XCode add files to project](https://raw.githubusercontent.com/riderodd/react-native-vosk/main/docs/xcode_add_files_to_folder.png)
+![XCode add files to project](https://raw.githubusercontent.com/parkdigy/react-native-vosk/main/docs/xcode_add_files_to_folder.png)
 
 Then navigate to your model folder. You can navigate to your Android assets folder as mentionned before, and chose your model here. It will avoid to have the model copied twice in your project. If you don't use the Android build, you can just put the model wherever you want, and select it.
 
-![XCode chose model folder](https://raw.githubusercontent.com/riderodd/react-native-vosk/main/docs/xcode_chose_model_folder.png)
+![XCode chose model folder](https://raw.githubusercontent.com/parkdigy/react-native-vosk/main/docs/xcode_chose_model_folder.png)
 
 That's all. The model folder should appear in your project. When you click on it, your project target should be checked (see below).
 
-![XCode full settings screenshot](https://raw.githubusercontent.com/riderodd/react-native-vosk/main/docs/xcode_full_settings_screenshot.png)
+![XCode full settings screenshot](https://raw.githubusercontent.com/parkdigy/react-native-vosk/main/docs/xcode_full_settings_screenshot.png)
 
 ## Usage
 
@@ -84,7 +84,7 @@ vosk
 
 Note that `start()` method will ask for audio record permission.
 
-[See complete example...](https://github.com/riderodd/react-native-vosk/blob/main/example/src/App.tsx)
+[See complete example...](https://github.com/parkdigy/react-native-vosk/blob/main/example/src/App.tsx)
 
 ## Experimental Loading via Path
 
@@ -208,7 +208,7 @@ vosk.start({
 // when done, remember to clean all listeners;
 ```
 
-#### [Complete example](https://github.com/riderodd/react-native-vosk/blob/main/example/src/App.tsx)
+#### [Complete example](https://github.com/parkdigy/react-native-vosk/blob/main/example/src/App.tsx)
 
 ## Contributing
 

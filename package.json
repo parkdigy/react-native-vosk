@@ -1,6 +1,6 @@
 {
   "name": "react-native-vosk",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Speech recognition module for react native using Vosk library",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -39,13 +39,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/riderodd/react-native-vosk",
+  "repository": "https://github.com/parkdigy/react-native-vosk",
   "author": "Joris Gaudin <contact@jg-web.site> (https://www.jg-web.site/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/riderodd/react-native-vosk/issues"
+    "url": "https://github.com/parkdigy/react-native-vosk/issues"
   },
-  "homepage": "https://github.com/riderodd/react-native-vosk#readme",
+  "homepage": "https://github.com/parkdigy/react-native-vosk#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -55,7 +55,7 @@
     "@react-native/eslint-config": "^0.72.2",
     "@release-it/conventional-changelog": "^5.0.0",
     "@types/jest": "^28.1.2",
-    "@types/react": "^18.2.45",
+    "@types/react": "^17.0.21",
     "@types/react-native": "0.70.0",
     "commitlint": "^17.0.2",
     "del-cli": "^5.0.0",
