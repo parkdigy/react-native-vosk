@@ -1,5 +1,5 @@
 {
-  "name": "@pdg/react-native-vosk",
+  "name": "pdg-react-native-vosk",
   "version": "0.2.6",
   "description": "Speech recognition module for react native using Vosk library",
   "main": "lib/commonjs/index",
